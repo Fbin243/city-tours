@@ -1,0 +1,192 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM 
+- Font family: "Poppins"
+- Font sizes (px)
+4.5rem
+3.6rem: main heading
+2rem
+1.6rem: nav link, button
+1.4rem: subheading, subnav link, paragraph
+
+- Font weights
+300
+400: light
+500: medium
+600: semi bold
+700: bold
+
+- Line heights
+1
+1.4
+
+- Letter spacing
+0.2rem
+
+--- 02 COLORS
+- Primary: #F4A36B
+- Tints: 
+- Shades: 
+- Accents: 
+- Greys: 
+#f1f1f1 : border
+#9A9A9A : paragraph, subheading
+#727475 : navigation
+#555 : heading
+- Other colors:
+#FF6868
+#C755D9
+#17B9D4
+#1ABC9C
+#F76570, #FFD203 : for cta
+#BA71DA: articles & news
+
+
+--- 05 SHADOWS
+0 0 2rem rgba(242, 242, 242, 0.6);
+
+--- 06 BORDER-RADIUS
+
+--- WEB PAGE
+- logo + nav
+- hero
+- feature row
+- feature boxes
+- preview card
+- z-pattern of feature rows
+- footer
+
+*/
+/***********************/
+/* GENERAL RESUABLE COMPONENTS 
+/***********************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  line-height: 1;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 117.6rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-heading {
+  font-size: 3.6rem;
+  color: #555;
+  margin-bottom: 3.2rem;
+}
+
+.sub-heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff;
+  background-color: #f4a36b;
+  padding: 0.8rem 2rem;
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.arrow-right {
+  position: relative;
+}
+
+.arrow-right::after {
+  content: "";
+  border: 0.5rem solid #555;
+  border-color: transparent transparent transparent #555;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-orange {
+  color: #f4a36b;
+}
+
+.tag-hot,
+.tag-new,
+.tag-best {
+  position: relative;
+}
+
+.tag-hot::after,
+.tag-new::after,
+.tag-best::after {
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8%;
+  font-weight: 500;
+}
+
+.tag-new::after {
+  content: "NEW";
+  background-color: #1abc9c;
+}
+
+.tag-hot::after {
+  content: "HOT";
+  background-color: #ff6868;
+}
+
+.tag-best::after {
+  content: "BEST";
+  background-color: #17b9d4;
+}
