@@ -20,6 +20,7 @@
 1.4
 
 - Letter spacing
+0.1rem
 0.2rem
 
 --- 02 COLORS
@@ -37,7 +38,7 @@
 #C755D9
 #17B9D4
 #1ABC9C
-#F76570, #FFD203 : for cta
+#F76570, #FFD203 : for preview cards
 #BA71DA: articles & news
 
 
@@ -50,7 +51,7 @@
 - logo + nav
 - hero
 - feature row
-- feature boxes
+- feature boxes (service section)
 - preview card
 - z-pattern of feature rows
 - footer
@@ -124,7 +125,7 @@ img {
   color: #9a9a9a;
   font-weight: 400;
   letter-spacing: 0.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.6rem;
 }
 
 .btn:link,
@@ -154,6 +155,22 @@ img {
 
 .text-orange {
   color: #f4a36b;
+}
+
+.underline-text {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-text::after {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  background-color: #f4a36b;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: -1;
 }
 
 .tag-hot,
