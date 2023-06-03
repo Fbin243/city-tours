@@ -1,0 +1,32 @@
+/**************************/
+/* BELOW 1200px ( desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .header {
+    padding: 2rem 0;
+  }
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    grid-column: 1 / -1;
+    margin-right: 0;
+    justify-self: center;
+    padding-bottom: 1.2rem;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    grid-column: 1/-1;
+    justify-self: center;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 65em) {
+  html {
+  }
+}

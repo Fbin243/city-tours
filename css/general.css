@@ -95,6 +95,7 @@ img {
 
 .container {
   max-width: 117.2rem;
+  padding: 0 0rem;
   margin: 0 auto;
 }
 
@@ -276,4 +277,9 @@ img {
   line-height: 1;
   padding: 0.4rem 0;
   letter-spacing: 0.1rem;
+}
+
+/* MOBILE NAVIGATION  */
+.mobile-nav-btn {
+  display: none;
 }

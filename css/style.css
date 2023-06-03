@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 9fr;
   align-items: center;
   letter-spacing: 0.1rem;
-  height: 7.6rem;
+  min-height: 7.6rem;
 }
 
 .logo {
@@ -19,10 +19,6 @@
   display: flex;
   align-items: center;
   gap: 1.8rem;
-}
-
-.nav-links .btn {
-  margin-left: 1.2rem;
 }
 
 .nav-link:link,
@@ -50,7 +46,6 @@
   left: 0;
   display: none;
   width: 100%;
-  /* background-color: red; */
 }
 
 .sub-nav--level-2.sub-nav--included::after {
@@ -104,33 +99,28 @@
 /* HERO
 /***********************/
 .hero-section {
-  position: relative;
   margin-bottom: 6rem;
-}
-
-.hero-img {
   background-image: url(../img/slide-01.jpg);
-  width: 100%;
-  height: calc(100vh - 7.6rem);
+  height: 80rem;
   background-size: cover;
   background-position-y: center;
+  display: flex;
+  align-items: center;
+  padding-left: 53%;
+  padding-top: 12rem;
 }
 
 .hero-content {
-  position: absolute;
-  position: absolute;
-  width: 40rem;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 19%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 }
 
 .hero-heading-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  position: absolute;
-  left: -20%;
   align-items: center;
   transform: rotate(-2deg);
 }
@@ -149,7 +139,6 @@
   display: flex;
   flex-direction: column;
   gap: 4.6rem;
-  margin-top: 16rem;
 }
 
 .hero-item {
@@ -160,7 +149,8 @@
   font-weight: 300;
   line-height: 1.4;
   display: flex;
-  gap: 2.4rem;
+  gap: 1.6rem;
+  padding-left: 5rem;
 }
 
 .hero-icon {
